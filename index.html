@@ -1,0 +1,23 @@
+
+
+<script>
+  
+  
+  setInterval( () => {
+    let date = new Date().toJSON();
+    let url = `https://lookerstudio.google.com/embed/reporting/0293d9d4-c697-40e1-aa49-749352bf0a3c/page/bKmxD?params={"d1": "${date}", "d0" : "${date}"}`; 
+     document.getElementById('iframe').src = url;
+     }, 5 * 60_000
+  );
+  
+
+</script>
+
+
+<iframe 
+id=iframe
+style="width:100vw;height:100vh"
+src="https://lookerstudio.google.com/embed/reporting/0293d9d4-c697-40e1-aa49-749352bf0a3c/page/bKmxD">
+
+
+
